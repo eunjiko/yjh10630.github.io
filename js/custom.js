@@ -85,7 +85,7 @@
 	    autoplay: true,
 	    autoplayTimeout:2000,
 	    autoplayHoverPause:true,
-			navText: [	
+			navText: [
 				"<i class='icon-chevron-thin-left'></i>",
 				"<i class='icon-chevron-thin-right'></i>"
 			],
@@ -141,7 +141,7 @@
 		$('.probootstrap-animate').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('probootstrap-animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -163,9 +163,9 @@
 							el.removeClass('item-animate');
 						},  k * 30, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '95%' } );
@@ -200,9 +200,9 @@
 		});
 	};
 
-	
-	
-	
+
+
+
 	var stellarInit = function() {
 		if( !isMobile.any() ) {
 			$(window).stellar();
@@ -248,7 +248,7 @@
 	var navigationSection = function() {
 
 		var $section = $('section[data-section]');
-		
+
 		$section.waypoint(function(direction) {
 		  	if (direction === 'down') {
 		    	navActive($(this.element).data('section'));
@@ -269,10 +269,10 @@
 
 	var dateCountDown = function() {
 		$('.date-countdown').simplyCountdown({
-	    year: 2019, // year
-	    month: 4, // month
-	    day: 20, // day
-	    hours: 0, // Default is 0 [0-23] integer
+	    year: 2018, // year
+	    month: 10, // month
+	    day: 13, // day
+	    hours: 11, // Default is 0 [0-23] integer
       minutes: 0, // Default is 0 [0-59] integer
       seconds: 0, // Default is 0 [0-59] integer
 		});

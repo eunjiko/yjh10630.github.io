@@ -125,41 +125,42 @@
     <div id="map"></div>
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=dvSZAzXl8WwoYszgNlHM"></script>
     <script>
-        // var mapOptions = {
-        //     center: new naver.maps.LatLng(37.4862166, 126.7819632),
+
+      var map = new naver.maps.Map('map', {
+          center: new naver.maps.LatLng(37.486510, 126.782824),
+          zoom: 10
+      });
+
+      var marker = new naver.maps.Marker({
+          position: new naver.maps.LatLng(37.486510, 126.782824),
+          map: map
+      });
+
+        // var HOME_PATH = window.HOME_PATH || '.';
+        // var position = new naver.maps.LatLng(37.486510, 126.782824);
+        //
+        // var map = new naver.maps.Map('map', {
+        //     center: position,
         //     zoom: 10
-        // };
-        // var marker = new naver.maps.Marker({
-        //     position: new naver.maps.LatLng(37.4862166, 126.7819632),
-        //     map: mapOptions
         // });
         //
-        // var map = new naver.maps.Map('map', mapOptions);
-        var HOME_PATH = window.HOME_PATH || '.';
-        var position = new naver.maps.LatLng(37.486510, 126.782824);
-
-        var map = new naver.maps.Map('map', {
-            center: position,
-            zoom: 10
-        });
-        
-        var marker = new naver.maps.Marker({
-            map: map,
-            position: position,
-            icon: {
-                path: [
-                    new naver.maps.Point(0, 70), new naver.maps.Point(20, 100), new naver.maps.Point(40, 70),
-                    new naver.maps.Point(30, 70), new naver.maps.Point(70, 0), new naver.maps.Point(10, 70)
-                ],
-                style: "closedPath",
-                anchor: new naver.maps.Point(23, 103),
-                fillColor: '#ff0000',
-                fillOpacity: 1,
-                strokeColor: '#000000',
-                strokeStyle: 'solid',
-                strokeWeight: 3
-            }
-        });
+        // var marker = new naver.maps.Marker({
+        //     map: map,
+        //     position: position,
+        //     icon: {
+        //         path: [
+        //             new naver.maps.Point(0, 70), new naver.maps.Point(20, 100), new naver.maps.Point(40, 70),
+        //             new naver.maps.Point(30, 70), new naver.maps.Point(70, 0), new naver.maps.Point(10, 70)
+        //         ],
+        //         style: "closedPath",
+        //         anchor: new naver.maps.Point(23, 103),
+        //         fillColor: '#ff0000',
+        //         fillOpacity: 1,
+        //         strokeColor: '#000000',
+        //         strokeStyle: 'solid',
+        //         strokeWeight: 3
+        //     }
+        // });
     </script>
 
     <section class="probootstrap-section" data-section="gallery">

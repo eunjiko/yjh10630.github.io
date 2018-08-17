@@ -1,7 +1,31 @@
 <html>
 	<head></head>
 	<body>
-		<h1><strong>Hello World!!!!!!!!!!!!</strong></h1>
-		<h1>예지바보바보바보</h1>
+		<h1><strong>테스트 입니당.</strong></h1>
+		<h1>카카오톡 공유하기 테스트</h1>
+
+		<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+		<script type='text/javascript'>
+				//<![CDATA[
+				Kakao.init('8f30a2c8c02fc8930d8ba39da8af02eb');
+				Kakao.Link.createTalkLinkButton({
+					container: '#kakao-link-btn',
+					label: '썸네일 이미지 위에 뜰 텍스트 입니다.',
+					image: {
+							src: '썸네일 이미지 경로',
+								width: '300',
+								height: '200'
+					},
+					webButton: {
+							text: '트라이트라이',
+								url: '위에서 플랫폼 추가하실 때 입력한 your site url'
+							}
+				});
+				//]]>
+			</script>
+
+			<a id="kakao-link-btn" href="javascript:;">
+    			<img src="//dev.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_small.png"/>
+			</a>
 	</body>
 </html>

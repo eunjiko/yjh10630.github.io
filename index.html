@@ -127,8 +127,12 @@
     <script>
         var mapOptions = {
             center: new naver.maps.LatLng(37.4862166, 126.7819632),
-            zoom: 7
+            zoom: 10
         };
+        var marker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.4862166, 126.7819632),
+            map: mapOptions
+        });
 
         var map = new naver.maps.Map('map', mapOptions);
     </script>

@@ -51,11 +51,31 @@
     // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
     Kakao.Link.createCustomButton({
       container: '#kakao-link-btn',
-      templateId: 3135,
-      templateArgs: {
-        'title': '제목 영역입니다.',
-        'description': '설명 영역입니다.'
-      }
+			objectType: 'feed',
+			content: {
+				title: 'test입니당',
+				imageUrl: '',
+				link: {
+					mobileWebUrl: 'https://yjh10630.github.io'
+					webUrl: 'https://yjh10630.github.io'
+				}
+			},
+			buttons:[
+				{
+					title: '웹으로 보기',
+					link: {
+						mobileWebUrl: 'https://yjh10630.github.io'
+						webUrl: 'https://yjh10630.github.io'
+					}
+				},
+				{
+					title: '웹으로 보기',
+					link: {
+						mobileWebUrl: 'https://yjh10630.github.io'
+						webUrl: 'https://yjh10630.github.io'
+					}
+				}
+			]
     });
   //]]>
 </script>

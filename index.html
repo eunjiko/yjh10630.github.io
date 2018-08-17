@@ -271,10 +271,10 @@
     <section class="probootstrap-section probootstrap-section-colored-darker">
       <div class="container text-center">
         <div class="row">
-          <div class="col-md-12 probootstrap-animate"><h2 class="mt0">Register</h2></div>
+          <div class="col-md-12 probootstrap-animate"><h2 class="mt0">공유하기</h2></div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12 probootstrap-animate">
+          <!-- <div class="col-md-4 col-sm-4 col-xs-12 probootstrap-animate">
             <a href="#" class="btn-register"><img src="img/bbab.png" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12 probootstrap-animate">
@@ -282,7 +282,41 @@
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12 probootstrap-animate">
             <a href="#" class="btn-register"><img src="img/amazon.png" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-          </div>
+          </div> -->
+          <a id="kakao-link-btn" href="javascript:;">
+              <img src="//dev.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
+          </a>
+          <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+          <script type='text/javascript'>
+  				  //<![CDATA[
+  				    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+  				    Kakao.init('8f30a2c8c02fc8930d8ba39da8af02eb');
+  				    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+  				    Kakao.Link.createDefaultButton({
+  				      container: '#kakao-link-btn',
+  				      objectType: 'feed',
+  				      content: {
+  				        title: '윤지훈♥︎유예지의 결혼식에 초대합니다.',
+  				        description: '2018년 10월 13일 오전 11시 부천 벨마리에웨딩홀',
+  				        imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+  				        link: {
+  				          mobileWebUrl: 'https://developers.kakao.com',
+  				          webUrl: 'https://developers.kakao.com'
+  				        }
+  				      },
+  				      buttons: [
+  				        {
+  				          title: '웹으로 보기',
+  				          link: {
+  				            mobileWebUrl: 'https://developers.kakao.com',
+  				            webUrl: 'https://developers.kakao.com'
+  				          }
+  				        },
+  				      ]
+  				    });
+  				  //]]>
+  				</script>
+          
         </div>
       </div>
     </section>

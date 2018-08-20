@@ -269,7 +269,7 @@
 
 	var dateCountDown = function() {
 		$('.date-countdown').simplyCountdown({
-	    year: 2017, // year
+	    year: 2020, // year
 	    month: 10, // month
 	    day: 13, // day
 	    hours: 11, // Default is 0 [0-23] integer

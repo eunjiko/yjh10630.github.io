@@ -66,7 +66,7 @@ $(document).ready(function () {
 
 
 
-/*
+
 CountDownTimer('13/10/2018', 'countdown'); // 2017년 1월 1일까지
 CountDownTimer('13/10/2018 11:00 AM', 'newcountdown'); // 2018년 1월 1일까지, 시간을 표시하려면 01:00 AM과 같은 형식을 사용합니다.
 function CountDownTimer(dt, id)
@@ -102,4 +102,3 @@ document.getElementById(id).innerHTML += seconds + '초';
 
 timer = setInterval(showRemaining, 1000);
 }
-*/

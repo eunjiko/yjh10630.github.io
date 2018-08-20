@@ -59,7 +59,7 @@ $(document).ready(function () {
     return futureFormattedDate
   }
   $("#countdown").countdown({
-    date: "1 January 2020 00:00:00", // Change this to your desired date to countdown to
+    date: "13 October 2018 11:00:00", // Change this to your desired date to countdown to
     format: "on"
   });
 });

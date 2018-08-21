@@ -53,7 +53,7 @@ $(document).ready(function () {
     var e = new Date;
     e.setDate(e.getDate() + 60);
     dd = e.getDate();
-    mm = e.getMonth() + 1;
+    mm = e.getMonth() + 8;// + 1;
     y = e.getFullYear();
     futureFormattedDate = mm + "/" + dd + "/" + y;
     return futureFormattedDate
